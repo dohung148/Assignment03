@@ -1,0 +1,75 @@
+.bg-cyan {
+  background-color: #f3fcfc;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  gap: 1rem;
+}
+/* Click screen to  */
+a {
+  text-decoration: none;
+  color: #333;
+}
+a:hover,
+a:checked a:visited {
+  color: #333;
+  cursor: default;
+}
+.number {
+  color: #fff;
+  display: inline;
+  padding: 7px 10px;
+  border: 2px solid #6e6060;
+  background-color: #b197fc;
+  border-radius: 50%;
+}
+
+.ionicon {
+  stroke: #99e9f2;
+}
+.goals > div > div > div:last-child {
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.timeline > div > div > div:last-child {
+  border-bottom: 1px dashed #99e9f2;
+}
+/* LAPTOP */
+@media (min-width: 992px) {
+  .grid {
+    grid-template-columns: 3fr 1fr 1fr;
+  }
+  .goals {
+    grid-row: 1/2;
+  }
+  .scopes {
+    grid-row: 2/3;
+  }
+  .team .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .icon {
+    width: 6rem;
+    height: 6rem;
+  }
+  .primary {
+    grid-column: 2/3;
+  }
+  .timeline {
+    grid-row: 1/3;
+    grid-column: 3/4;
+  }
+}
+
+/* TABLET - MOBILE */
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}

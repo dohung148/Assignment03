@@ -1,0 +1,16 @@
+@media (max-width: 575px) {
+  .navbar-nav {
+    gap: 10px;
+    margin-left: 20px;
+  }
+  .cert-container .cert-item:nth-child(2)::before,
+  .cert-container .cert-item:last-child::before {
+    content: "";
+    display: inline-block;
+    background-color: #d6c08d;
+    height: 1px;
+    width: 80%;
+    position: absolute;
+    margin-top: -2rem;
+  }
+}
